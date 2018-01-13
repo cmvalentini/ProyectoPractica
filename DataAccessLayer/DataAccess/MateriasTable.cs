@@ -19,13 +19,7 @@ namespace DataAccessLayer.DataAccess
             }
         }
 
-        public override List<string> Columnas
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-        }
+
 
         public override string Tabla
         {

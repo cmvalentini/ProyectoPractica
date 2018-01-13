@@ -43,6 +43,7 @@
     <Compile Include="BaseController.cs" />
     <Compile Include="AlumnoController.cs" />
     <Compile Include="Model\AlumnoViewModel.cs" />
+    <Compile Include="Model\InscripcionVM.cs" />
     <Compile Include="Model\ViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

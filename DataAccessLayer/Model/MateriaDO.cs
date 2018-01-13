@@ -10,5 +10,20 @@ namespace DataAccessLayer.Model
     {
         public int ID { get; set; }
         public string Descripcion { get; set; }
+
+        public string ListarValores()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string GenerarValores()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string ListarColumnas()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
