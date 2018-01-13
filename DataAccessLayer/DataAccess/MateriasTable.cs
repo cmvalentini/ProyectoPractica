@@ -4,32 +4,38 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace DataAccessLayer.DataAccess
 {
     public class MateriasTable : IDataTable<MateriaDO>
     {
-        public override bool Delete(int id)
+        //Completar como en AlumnosTable
+        public override string ColumnaKey
         {
-            throw new NotImplementedException();
+            get
+            {
+                throw new NotImplementedException();
+            }
         }
 
-        public override List<MateriaDO> GetAll()
+        public override List<string> Columnas
         {
-            throw new NotImplementedException();
+            get
+            {
+                throw new NotImplementedException();
+            }
         }
 
-        public override IDataObject GetById(int id)
+        public override string Tabla
         {
-            throw new NotImplementedException();
+            get
+            {
+                throw new NotImplementedException();
+            }
         }
 
-        public override bool Insert(MateriaDO objeto)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override bool Update(MateriaDO objeto)
+        protected override MateriaDO Map(IDataRecord record)
         {
             throw new NotImplementedException();
         }

@@ -30,8 +30,10 @@ namespace BusinessLogicLayer
             return repository.Alumnos.Update(alumnodo);
         }
         public bool Borrar(int id)
-        {
+        {            
+            repository.Alumnos.Delete(id);
             return repository.Alumnos.Delete(id);
+
         }
 
     }

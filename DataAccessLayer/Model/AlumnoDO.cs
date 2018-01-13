@@ -18,5 +18,21 @@ namespace DataAccessLayer.Model
         public int ID { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
+
+        
+        public string ListarValores()
+        {
+            return $"'{Nombre}', '{Apellido}'";
+        }
+
+        public string GenerarValores()
+        {
+           return $"Nombre = '{Nombre}', Apellido = '{Apellido}' WHERE IdAlumno = {ID}";
+        }
+
+        public string ListarColumnas()
+        {
+            return "Nombre, Apellido";
+        }
     }
 }

@@ -8,5 +8,8 @@ namespace DataAccessLayer.Model
 {
     public interface IDataObject
     {
+        string ListarValores();
+        string GenerarValores();
+        string ListarColumnas();
     }
 }
