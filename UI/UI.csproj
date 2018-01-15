@@ -32,6 +32,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -52,10 +56,28 @@
     <Compile Include="AlumnosForm.Designer.cs">
       <DependentUpon>AlumnosForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MateriasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MateriasForm.Designer.cs">
+      <DependentUpon>MateriasForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AlumnosForm.resx">
       <DependentUpon>AlumnosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MateriasForm.resx">
+      <DependentUpon>MateriasForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -8,22 +8,29 @@ namespace DataAccessLayer.Model
 {
     public class MateriaDO : IDataObject
     {
+        public MateriaDO() { }
+        public MateriaDO(string descripcion, int id = 0)
+        {
+            ID = id;
+            Descripcion = descripcion;
+        }
+
         public int ID { get; set; }
         public string Descripcion { get; set; }
 
         public string ListarValores()
         {
-            throw new NotImplementedException();
+            return $"'{Descripcion}', '{ID}'";
         }
 
         public string GenerarValores()
         {
-            throw new NotImplementedException();
+            return $"Descripcion = '{Descripcion}' WHERE IdAlumno = {ID}";
         }
 
         public string ListarColumnas()
         {
-            throw new NotImplementedException();
+            return "Descripcion";
         }
     }
 }

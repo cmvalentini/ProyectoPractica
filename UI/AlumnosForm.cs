@@ -90,5 +90,10 @@ namespace UI
         {
             controller.Borrar((int)alumnosGrid.CurrentRow.Cells[0].Value);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
